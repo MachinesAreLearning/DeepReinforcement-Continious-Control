@@ -1,7 +1,7 @@
 # DeepReinforcement-Continious-Control
 # Udacity-Deep Reinforcement learning(DRL)-Continuous-Control
 
-![Picture of the environment](https://github.com/rrishi2/DeepReinforcement-Continious-Control/tree/master/images/environement.gif)
+![environment](https://github.com/rrishi2/DeepReinforcement-Continious-Control/tree/master/images/environement.gif)
 
 
 ## Introduction
