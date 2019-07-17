@@ -125,14 +125,3 @@ Install Dependencies
 cd python
 pip install .
 
-## The solution:
-* The solution for this project was an implementation of the Deep Deterministic Policy Gradients algorithm.
-* This project was challenging is a number of was:
-..* Training for such a high dimensional input/output environment made training very slow. The solution had to focus on trying to improve training time. 
-..* Finding the right hyperparameters via tunning. 
-..* For action values that is continuous, dealing with noise correctly allows for more generalization and makes the agent convergence more effective.
-* Using a DDPG  where the actor (policy-based) critic (values based), are combined to use the most effective parts of each algorithm. 
-..* The actor based method has high variance but is more generalizable 
-..* The values-based method has lower variance but higher bias.
-..* The policy-based method required a lot of data samples and training can be slow. it has to wait until the end of the episode to update the policy.
-..* The critic used temporal difference learning and updates the function after each step. The approximates a value function used to calculate the expected future reward. 
