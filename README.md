@@ -1,7 +1,7 @@
 # DeepReinforcement-Continious-Control
 # Udacity-Deep Reinforcement learning(DRL)-Continuous-Control
 
-![Picture of the environment](https://github.com/nisheed75/Udacity-DRL-Continious-Control/blob/master/images/environement.gif)
+![Picture of the environment](https://github.com/rrishi2/DeepReinforcement-Continious-Control/tree/master/images/environement.gif)
 
 
 ## Introduction
@@ -10,7 +10,9 @@ The observation space consists of 33 variables corresponding to the position, ro
 
 The DDPG is implemented in Python 3 using PyTorch.
 
-The full report can be found here. (https://github.com/kinwo/deeprl-continuous-control/blob/master/Report.pdf)
+The full report can be found here. (https://github.com/rrishi2/DeepReinforcement-Continious-Control/blob/master/report.pdf)
+
+Code log is placed here.(https://github.com/rrishi2/DeepReinforcement-Continious-Control/blob/master/Continuous_Control_Code_Run.pdf)
 
 
 ### The Environment
@@ -39,14 +41,13 @@ The barrier to solving the second version of the environment is slightly differe
 
 As an example, consider the plot below, where we have plotted the average score (overall 20 agents) obtained with each episode
 
-![Udacity Results](https://github.com/nisheed75/Udacity-DRL-Continious-Control/blob/master/images/udacity_solution.png)
+![Udacity Results](https://github.com/rrishi2/DeepReinforcement-Continious-Control/blob/master/images/Result.JPG)
 
 
 The environment is considered solved when the average (over 100 episodes) of those average scores is at least +30. In the case of the plot above, the environment was solved at episode 63, since the average of the average scores from episodes 64 to 163 (inclusive) was greater than +30.
 
 ## Environment Solved Criteria:
 The environment is considered solved when the average mean score of all agents reach 30+ in the last 100 epsisodes.
-
 
 
 ### Unity Environment
@@ -78,17 +79,43 @@ In this course, you will use Unity's rich environments to design, train, and eva
 After you install the unity agent following these [instructions] (https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Readme.md), start your jupyter notebook and open the Continuous_Control.ipynb solution notebook and execute each cell.
 
 ### Getting Started
-1.Install Unity ML https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
+1. Install Unity ML
+https://github.com/Unity-Technologies/ml-agents/blob/master/docs/Installation.md
 
-Download the Unity ML environment from one of the links below based on your OS:
+2. Download the Unity ML environment from one of the links below based on your OS:
+    - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+    - Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
+    - Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
+    - Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
 
-Linux: click here 
-Mac OSX: click here
-Windows (32-bit): click here
-Windows (64-bit): click here
 Then unzip the file and place the file in this project folder.
 
-Create Conda Environment
+3. Create Conda Environment   
+
+Install conda from conda.io. Create a new Conda environment with Python 3.6.
+
+```bash
+conda create --name deeprl python=3.6
+source activate deeprl
+```
+
+4. Install Dependencies
+```bash
+cd python
+pip install .
+```
+
+
+## How to run the agent
+To start training, simply open *Continuous_Control.ipynb* in Jupyter Notebook and follow the instructions there:
+
+Start Jupyter Notebook
+```bash
+jupyter notebook
+```
+Trained model weights is included for quickly running the agent and seeing the result in Unity ML Agent.
+Simply skip the training step and run the last step of the *Continuous_Control.ipynb*
+
 Install conda from conda.io. Create a new Conda environment with Python 3.6.
 
 conda create --name deeprl python=3.6
