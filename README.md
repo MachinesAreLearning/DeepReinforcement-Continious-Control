@@ -1,7 +1,8 @@
 # DeepReinforcement-Continious-Control
 # Udacity-Deep Reinforcement learning(DRL)-Continuous-Control
 
-![environment](https://github.com/rrishi2/DeepReinforcement-Continious-Control/tree/master/images/environement.gif)
+
+![environment](https://github.com/rrishi2/DeepReinforcement-Continious-Control/blob/master/images/environement.gif)
 
 
 ## Introduction
@@ -44,7 +45,7 @@ As an example, consider the plot below, where we have plotted the average score 
 ![Result](https://github.com/rrishi2/DeepReinforcement-Continious-Control/blob/master/images/Result.JPG)
 
 
-The environment is considered solved when the average (over 100 episodes) of those average scores is at least +30. In the case of the plot above, the environment was solved at episode 63, since the average of the average scores from episodes 64 to 163 (inclusive) was greater than +30.
+The environment is considered solved when the average (over 100 episodes) of those average scores is at least +30. 
 
 ## Environment Solved Criteria:
 The environment is considered solved when the average mean score of all agents reach 30+ in the last 100 epsisodes.
